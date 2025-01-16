@@ -1,0 +1,22 @@
+[1/7] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\shd-labtools\Documents\RnD_MOUTHIO\Code\MOUTHIO_ESP2\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.1.4/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/shd-labtools/Documents/RnD_MOUTHIO/Code/MOUTHIO_ESP2/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5060 bytes. 0x2fa0 bytes (37%) free.
+[2/5] Linking CXX executable MOUTHIO.elf
+FAILED: MOUTHIO.elf 
+cmd.exe /C "cd . && C:\Espressif\tools\riscv32-esp-elf\esp-12.2.0_20230208\riscv32-esp-elf\bin\riscv32-esp-elf-g++.exe -march=rv32imc_zicsr_zifencei -nostartfiles -march=rv32imc_zicsr_zifencei --specs=nosys.specs    -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32C3=0 -Wl,--Map=C:/Users/shd-labtools/Documents/RnD_MOUTHIO/Code/MOUTHIO_ESP2/build/MOUTHIO.map -Wl,--no-warn-rwx-segments -fno-rtti -fno-lto -Wl,--gc-sections -Wl,--warn-common -T esp32c3.peripherals.ld -T esp32c3.rom.ld -T esp32c3.rom.api.ld -T esp32c3.rom.libgcc.ld -T esp32c3.rom.newlib.ld -T esp32c3.rom.version.ld -T esp32c3.rom.eco3.ld -T memory.ld -T sections.ld @CMakeFiles\MOUTHIO.elf.rsp -o MOUTHIO.elf  && cd ."
+c:/espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/12.2.0/../../../../riscv32-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(main.cpp.obj): in function `checkRange()':
+C:/Users/shd-labtools/Documents/RnD_MOUTHIO/Code/MOUTHIO_ESP2/main/bleScript.cpp:103: undefined reference to `MC36XX::GetRangeCtrl()'
+c:/espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/12.2.0/../../../../riscv32-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(main.cpp.obj): in function `checkRange()':
+C:/Users/shd-labtools/Documents/RnD_MOUTHIO/Code/MOUTHIO_ESP2/main/Accelerometer.cpp:125: undefined reference to `MC36XX::GetResolutionCtrl()'
+c:/espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/12.2.0/../../../../riscv32-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(main.cpp.obj): in function `checkSamplingRate()':
+C:/Users/shd-labtools/Documents/RnD_MOUTHIO/Code/MOUTHIO_ESP2/main/Accelerometer.cpp:161: undefined reference to `MC36XX::GetCWakeSampleRate()'
+c:/espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/12.2.0/../../../../riscv32-esp-elf/bin/ld.exe: C:/Users/shd-labtools/Documents/RnD_MOUTHIO/Code/MOUTHIO_ESP2/main/Accelerometer.cpp:188: undefined reference to `MC36XX::GetSniffSampleRate()'
+c:/espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/12.2.0/../../../../riscv32-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(main.cpp.obj): in function `checkSniffSamplingRate()':
+C:/Users/shd-labtools/Documents/RnD_MOUTHIO/Code/MOUTHIO_ESP2/main/Accelerometer.cpp:235: undefined reference to `MC36XX::start()'
+c:/espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/12.2.0/../../../../riscv32-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(main.cpp.obj): in function `setupMC3635()':
+C:/Users/shd-labtools/Documents/RnD_MOUTHIO/Code/MOUTHIO_ESP2/main/Accelerometer.cpp:48: undefined reference to `MC36XX::readRawAccel()'
+c:/espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/12.2.0/../../../../riscv32-esp-elf/bin/ld.exe: C:/Users/shd-labtools/Documents/RnD_MOUTHIO/Code/MOUTHIO_ESP2/main/Accelerometer.cpp:62: undefined reference to `MC36XX::readRawAccel()'
+c:/espressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/12.2.0/../../../../riscv32-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(main.cpp.obj): in function `readMC3635()':
+C:/Users/shd-labtools/Documents/RnD_MOUTHIO/Code/MOUTHIO_ESP2/main/Accelerometer.cpp:263: undefined reference to `MC36XX::readRawAccel()'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

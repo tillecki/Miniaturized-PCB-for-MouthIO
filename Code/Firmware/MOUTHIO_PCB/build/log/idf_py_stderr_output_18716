@@ -1,0 +1,8 @@
+ESP Insights Project commit: HEAD-HASH-NOTFOUND
+ESP RainMaker Project commit: HEAD-HASH-NOTFOUND
+CMake Error at CMakeLists.txt:15 (target_compile_definitions):
+  Cannot specify compile definitions for target "MOUTHIO" which is not built
+  by this project.
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

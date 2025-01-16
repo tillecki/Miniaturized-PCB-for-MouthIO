@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "footprints")(type "KiCad")(uri "C:/Users/shd-labtools/Downloads/MC3635/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "footprints_LTC")(type "KiCad")(uri "${KIPRJMOD}/Lib/LTC4124EV_TRMPBF/KiCAD/footprints.pretty")(options "")(descr ""))
+)

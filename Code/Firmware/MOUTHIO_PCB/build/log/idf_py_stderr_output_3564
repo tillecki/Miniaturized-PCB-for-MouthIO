@@ -1,0 +1,8 @@
+CMake Error at CMakeLists.txt:11 (target_compile_definitions):
+  Cannot specify compile definitions for target "PRIVATE" which is not built
+  by this project.
+
+
+ESP Insights Project commit: HEAD-HASH-NOTFOUND
+ESP RainMaker Project commit: HEAD-HASH-NOTFOUND
+ninja: error: rebuilding 'build.ninja': subcommand failed
