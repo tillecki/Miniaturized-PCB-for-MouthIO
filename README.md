@@ -1,1 +1,1 @@
-# Miniturized-PCB-for-MouthIO
+# Miniaturized-PCB-for-MouthIO
